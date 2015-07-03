@@ -1,0 +1,309 @@
+
+.logo{
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    margin-right: 35px;
+    text-decoration: none;
+    line-height: 5rem;
+    color: #222;
+    padding-left: 3rem;
+    float: left;
+}
+.about{
+    display: none;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 5rem;
+    background: #fff;
+    z-index: 99;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.navbar{
+    position: fixed;
+}
+.menu-bar-warper{
+    width: 34px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+    top: 13px;
+    right: 6px;
+    background: transparent;
+    border-radius: 2px;
+    z-index: 99;
+
+}
+ .menu-bar{
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    position: absolute;
+    top: 20px;
+    right: 12px;
+    background: #1EAEDB;
+    cursor: pointer;
+}
+ .menu-bar + .menu-bar {
+    margin-top: 7px;
+}
+ .menu-bar + .menu-bar + .menu-bar{
+    margin-top: 14px;
+}
+.navbar-item {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid #eee;
+    padding-left: 30px;
+    background: #fff;
+}
+.navbar-item:hover{
+    background: #F5F5F5;
+}
+.navbar-item.hover{
+    background: #F5F5F5;
+}
+.navbar-list{
+    position: relative;
+    margin: 0;
+    -webkit-transition: all ease 200ms;
+    -moz-transition: all ease 200ms;
+    -ms-transition: all ease 200ms;
+    -o-transition: all ease 200ms;
+    transition: all ease 200ms;
+}
+.navbar-link{
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    margin-right: 35px;
+    text-decoration: none;
+    line-height: 3rem;
+    color: #222;
+    display: inline-block;
+    width: 100%;
+}
+a.hover{
+    color:#0FA0CE;
+}
+.item{
+    height: 70px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    /*display: inline-block;*/
+    white-space: normal;
+    padding: 0 5px; 
+    line-height: 16px;
+    display: table;
+}
+.item > a {
+    display: table-cell;
+    vertical-align: middle;
+    text-decoration: none;
+}
+.content{
+    -webkit-transition: all ease 200ms;
+    -moz-transition: all ease 200ms ;
+    -ms-transition: all ease 200ms ;
+    -o-transition: all ease 200ms ;
+    transition: all ease 200ms ;
+}
+.row{
+    margin-top: 10px;
+}
+.item-link{
+    text-decoration: none;
+}
+@media (max-width: 750px) {
+    .content-translate{
+        -webkit-transform: translateY(140px);
+        -moz-transform: translateY(140px);
+        -ms-transform: translateY(140px);
+        -o-transform: translateY(140px);
+        transform: translateY(140px);
+    }
+    .mobile-hide{
+        -webkit-transform: scale(0, 0);
+        -moz-transform: scale(0, 0);
+        -ms-transform: scale(0, 0);
+        -o-transform: scale(0, 0);
+        transform: scale(0, 0);
+    }
+}
+@media (min-width: 750px) {
+    .mobile-hide{
+        visibility: visible;
+    }
+    .logo{
+        display: none;
+    }
+    .about{
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: .2rem;
+        margin-right: 35px;
+        text-decoration: none;
+        line-height: 5rem;
+        color: #222;
+        padding-left: 3rem;
+        float: right;
+        display: block
+    }
+    .about a{
+        text-decoration: none;
+    }
+    .menu-bar,.menu-bar-warper{
+        display: none;
+    }
+    .navbar{
+        position: fixed;
+        padding-left: 30px;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 5rem;
+        background: #fff;
+        z-index: 99;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+    .navbar-item{
+        display: inline-block;
+        margin-bottom: 0;
+        width: auto;
+    }
+    .navbar-list{
+        margin-bottom: 0;
+        top:0;
+        display: block;
+    }
+    .navbar-link{
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: .2rem;
+        margin-right: 35px;
+        text-decoration: none;
+        line-height: 5rem;
+        color: #222;
+    
+        display: inline-block;
+}
+}
+
+.section{
+    width: 100%;
+    min-height: 200px;
+    margin-top: 80px;
+}
+/*
+.section-js{
+    background: #3DB1E5;
+}
+.section-css{
+    background: #f2dede;
+}
+.section-design{
+    background: #dff0d8;
+}*/
+
+.tooltip,
+.tooltip:after,
+.tooltip:before,
+.tooltip *,
+.tooltip *:after,
+.tooltip *:before {
+    box-sizing: border-box;
+    -webkit-transition: none;
+    transition: none;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+.tooltip-visible {
+    opacity: 1;
+}
+.tooltip{
+    position: absolute;
+    z-index: 999;
+    max-width: 200px;
+}
+.tooltip-content {
+    background: #111111;
+    border-radius: 3px;
+    color: #ffffff;
+    display: block;
+    float: left;
+    font-size: 12px;
+    margin: 0;
+    padding: 10px 15px;
+    position: relative;
+    /* white-space: nowrap; */
+}
+.tooltip-caret {
+    width: 0;
+    height: 0;
+    content: '';
+    display: block;
+    margin: 0;
+    position: absolute;
+}
+.right .tooltip-content {
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.35);
+}
+.right .tooltip-caret {
+    top: 0;
+    left: -5px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #111111;
+}
+.left .tooltip-content {
+    box-shadow: -1px 0 5px rgba(0, 0, 0, 0.35);
+}
+.left .tooltip-caret {
+    top: 0;
+    right: -5px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #111111;
+}
+.top .tooltip-caret,
+.bottom .tooltip-caret {
+    display: block;
+    float: none;
+    margin: 0 auto;
+}
+.top .tooltip-content {
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.35);
+}
+.top .tooltip-caret {
+    bottom: -5px;
+    left: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #111111;
+}
+.bottom .tooltip-content {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
+}
+.bottom .tooltip-caret {
+    top: -5px;
+    left: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #111111;
+}
