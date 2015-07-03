@@ -56,6 +56,11 @@
             "title": "A Serials Elegant jQuery Plugins"
         },
         {
+            "name": "EasyUI",
+            "url": "http://www.jeasyui.com/demo-mobile/main/index.php",
+            "title": "简单强大的UI组件"
+        },
+        {
             "name": "Zepto.js",
             "url": "http://zeptojs.com/",
             "title": "A minimalist JavaScript library for modern browsers with a largely jQuery-compatible API"
