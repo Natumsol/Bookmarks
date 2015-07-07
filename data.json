@@ -61,6 +61,16 @@
             "title": "简单强大的UI组件"
         },
         {
+            "name":"animatedModal.js",
+            "url":"http://joaopereirawd.github.io/animatedModal.js/",
+            "title":"创建全屏的模态窗口"
+        },
+        {
+            "name":"ArtDialog.js",
+            "url":"http://aui.github.io/artDialog/",
+            "title":"功能强大的弹出层插件"
+        },
+        {
             "name": "Zepto.js",
             "url": "http://zeptojs.com/",
             "title": "A minimalist JavaScript library for modern browsers with a largely jQuery-compatible API"
